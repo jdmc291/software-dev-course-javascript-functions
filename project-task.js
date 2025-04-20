@@ -33,25 +33,70 @@ This activity reinforces:
 // ============================================
 
 // Script 1 - Greeting multiple users
-console.log("Welcome, Alice!");
-console.log("Welcome, Bob!");
-console.log("Welcome, Charlie!");
+// console.log("Welcome, Alice!");
+// console.log("Welcome, Bob!");
+// console.log("Welcome, Charlie!");
 
+function WelcomeFunction(name){
+console.log(`Welcome, ${name}!`)
+}
 // Script 2 - Sum calculation
-let num1 = 5, num2 = 10;
-let sum = num1 + num2;
-console.log("The sum of 5 and 10 is " + sum);
+// let num1 = 5, num2 = 10;
+// let sum = num1 + num2;
+
+// console.log("The sum of 5 and 10 is " + sum);
+
+function CalculationSum(num1, num2){
+   let total = num1 + num2;
+
+   console.log(`The sum of ${num1} and ${num2} is ${total}`);
+}
 
 // Script 3 - Product calculation
-let product = num1 * num2;
-console.log("The product of 5 and 10 is " + product);
+// let product = num1 * num2;
+// console.log("The product of 5 and 10 is " + product);
+
+function CalculationProduct(num1, num2){
+   let product = num1 * num2;
+   return product;
+}
 
 // Script 4 - Print names from a list
-let names = ["Alice", "Bob", "Charlie"];
-console.log("Names in the list:");
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
+
+// let names = ["Alice", "Bob", "Charlie"];
+// console.log("Names in the list:");
+
+//for (let i = 0; i < names.length; i++) {
+//    console.log(names[i]);
+//}
+
+PrintNames = (listOfNames) =>{
+
+   console.log("Names in the list: \n")
+   for(let i = 0; i < listOfNames.length; i++)
+   {
+      console.log(listOfNames[i]);
+   }
 }
+
+
+let myNum1 = 10;
+let myNum2 = 11;
+
+let myName  = "Jalen";
+
+let myNameList = ["Jane", "Elliot", "Josie", "Johnny"];
+
+let myProduct = CalculationProduct(myNum1, myNum2);
+
+
+WelcomeFunction(myName);
+
+CalculationSum(myNum1,myNum2);
+
+console.log("The product between my 2 numbers is: " + myProduct);
+
+PrintNames(myNameList);
 
 /*
 ===========================================
